@@ -1,0 +1,22 @@
+body {
+  /*margin: 0px;
+  /*padding: 0px;*/
+  /*width: 290px;*/
+  min-width: 1px;
+}
+
+body, html {
+  height: auto;
+}
+
+.session {
+  background: red;
+}
+.activity {
+  background: green;
+}
+
+.ui.card {
+  margin: 0px;
+  border: none;
+}

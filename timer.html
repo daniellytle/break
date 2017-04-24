@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="ui">
+    <div class="ui card" style="display:none;">
+      <div class="content">
+        <div class="header" style="float:left;">How to use Break</div>
+        <a class="flip" style="float:right;">
+          Close
+        </a>
+      </div>
+      <div class="content">
+        <p>Start a session to begin</p>
+        <p>You can change your settings in the options page</p>
+        <p>Click snooze to start a break early</p>
+      </div>
+    </div>
+    <div class="ui card">
+      <div class="content">
+        <div class="header" style="float:left;">Next Activity in <span id="timer"></span></div>
+        <a class="flip" style="float:right;">
+          help
+        </a>
+      </div>
+      <div class="content">
+        <div class="ui two small feed">
+          <div class="event">
+            <div class="content">
+              <div class="item">
+                <div id="sessions" class="ui green horizontal label"></div>
+                Sessions
+              </div>
+            </div>
+          </div>
+          <!-- <div class="event">
+            <div class="content">
+              <a class="item">
+                <div id="total-time" class="ui blue horizontal label"></div>
+                Time Working
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="ui three buttons">
+          <button id="snooze" class="ui basic blue button">Snooze</button>
+          <button id="break" class="ui basic green button">Break</button>
+          <button id="end-session" class="ui basic red button">End</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="timer.js"></script>
+</html>
